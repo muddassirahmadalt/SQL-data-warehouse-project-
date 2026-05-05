@@ -8,24 +8,26 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 This project demonstrates the end-to-end design and implementation of a Modern Data Warehouse using the Medallion Architecture (Bronze, Silver, Gold layers).
 
-🔑 Key Components
--**1. Data Architecture:** Designing a scalable warehouse using Bronze, Silver, and Gold layers
-**2. ETL Pipelines:** Extracting, transforming, and loading data from source systems
-**3. Data Modeling:** Creating optimized fact and dimension tables for analytics
-**4. Analytics & Reporting:** Building SQL-based reports and dashboards 
+### 🔑 Key Components
 
-
-## 🎯 Skills Demonstrated
-This project showcases practical expertise in:
-
-SQL Development
-Data Architecture
-Data Engineering
-ETL Pipeline Development
-Data Modeling
-Data Analytics
+- **Data Architecture**: Designing a scalable warehouse using Bronze, Silver, and Gold layers  
+- **ETL Pipelines**: Extracting, transforming, and loading data from source systems  
+- **Data Modeling**: Creating optimized fact and dimension tables for analytics  
+- **Analytics & Reporting**: Building SQL-based reports and dashboards  
 
 ---
+
+## 🎯 Skills Demonstrated
+
+This project showcases practical expertise in:
+
+- SQL Development  
+- Data Architecture  
+- Data Engineering  
+- ETL Pipeline Development  
+- Data Modeling  
+- Data Analytics
+  
 
 ## 🚀 Project Requirements
 
@@ -55,6 +57,46 @@ Develop SQL-based analytics to deliver detailed insights into:
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
 ---
+## 🏗️ Data Architecture
+
+The data architecture for this project  follows the Medallion Architecture **Bronze**,**Silver** and **Gold** Layers
+
+![Data Architecture](docs/DataArchitecture.png)
+
+1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.  
+
+2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.  
+
+3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+
+
+## 📂 Repository Structure
+
+```
+data-warehouse-project/
+│
+├── datasets/                 # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/                     # Project documentation and architecture details
+│   ├── etl.drawio            # Draw.io file shows all different techniques and methods of ETL
+│   ├── data_architecture.drawio  # Draw.io file shows the project’s architecture
+│   ├── data_catalog.md       # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.drawio      # Draw.io file for the data flow diagram
+│   ├── data_models.drawio    # Draw.io file for data models (star schema)
+│   └── naming_conventions.md # Consistent naming guidelines for tables, columns, and files
+│
+├── scripts/                  # SQL scripts for ETL and transformations
+│   ├── bronze/               # Scripts for extracting and loading raw data
+│   ├── silver/               # Scripts for cleaning and transforming data
+│   └── gold/                 # Scripts for creating analytical models
+│
+├── tests/                    # Test scripts and quality files
+│
+├── README.md                 # Project overview and instructions
+├── LICENSE                   # License information for the repository
+├── .gitignore                # Files and directories to be ignored by Git
+└── requirements.txt          # Dependencies and requirements for the project
+``` 
 
 
 
