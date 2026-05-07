@@ -66,7 +66,20 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Sales Trends**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
-Detailed information can be found in docs/data_catalog.md.
+
+Detailed information can be found in docs/data_catalog.md.  
+
+--- 
+
+## 📊 Star Schema Overview
+
+The star schema in the Gold Layer simplifies analytical queries and supports business reporting. It consists of:
+
+* **Fact Table:** `fact_sales` (stores transactional sales data).
+
+* **Dimension Tables:** `dim_customers`, `dim_products`.
+
+This design reduces query complexity and improves performance, allowing faster and more intuitive data analysis.
 
 ---
 ## 🏗️ Data Architecture
