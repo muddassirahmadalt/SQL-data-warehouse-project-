@@ -27,7 +27,18 @@ This project showcases practical expertise in:
 - ETL Pipeline Development  
 - Data Modeling  
 - Data Analytics
-  
+
+---
+## ⚙️ Tools & Resources
+
+* **Datasets:** Provided as CSV files (ERP and CRM data).
+* **SQL Server Express:** Database server for hosting the data warehouse.
+* **SQL Server Management Studio (SSMS):** Interface for managing and querying the database.
+* **Git & GitHub:** Version control and project management.
+* **Draw.io:** Diagrams for architecture, data models, and ETL workflows.
+* **Notion:** Project planning and task tracking.
+
+ --- 
 
 ## 🚀 Project Requirements
 
@@ -55,6 +66,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Sales Trends**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+Detailed information can be found in docs/data_catalog.md.
 
 ---
 ## 🏗️ Data Architecture
